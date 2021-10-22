@@ -47,14 +47,3 @@ def registration_view(request):
 
     return Response(newDict)
 
-
-
-# ferzi code ko comment krke rkha kro bc override ho jata h 
-#earlier
-# @api_view(['POST',])
-# def registration_view(request):
-#   if request.method == 'POST':
-#     serializer = RegistrationSerializer(data=request.data)
-#     if serializer.is_valid():
-#       serializer.save()
-#       return Response(serializer.data)
