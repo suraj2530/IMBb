@@ -46,4 +46,3 @@ def registration_view(request):
       newDict = serializer.errors
 
     return Response(newDict)
-# commit
