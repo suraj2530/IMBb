@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from django.contrib.auth.models import User
 from rest_framework.authtoken.models import Token 
 
-# from user_app import models    # using jwt token so muting this 
+# from user_app import models    
 
 from rest_framework import status 
 from rest_framework_simplejwt.tokens import RefreshToken
@@ -49,12 +49,3 @@ def registration_view(request):
 
 
 
-# ferzi code ko comment krke rkha kro bc override ho jata h 
-#earlier
-# @api_view(['POST',])
-# def registration_view(request):
-#   if request.method == 'POST':
-#     serializer = RegistrationSerializer(data=request.data)
-#     if serializer.is_valid():
-#       serializer.save()
-#       return Response(serializer.data)

@@ -19,7 +19,7 @@ class RegistrationSerializer(serializers.ModelSerializer):
       raise serializers.ValidationError({'error': 'P1 and P2 should be same!'})
     
     if User.objects.filter(email = self.validated_data['email']).exists(): 
-      # bitch don't use like email = self.validated_data['email']))
+      #  don't use like email = self.validated_data['email']))
       raise serializers.ValidationError({'error': 'Email already exists!'})
      
     account = User(email = self.validated_data['email'], username = self.validated_data['username'])
